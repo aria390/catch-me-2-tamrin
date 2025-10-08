@@ -7,18 +7,21 @@
     <title>catch-me-2-tamrin</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="h-screen bg-[#516dff] text-white">
+  <body class="h-screen bg-[#516dff] text-white overflow-hidden">
     <main class="h-full">
-      <section class="screen h-[100vh] flex flex-col justify-center items-center">
+      <section
+        class="screen h-[100vh] flex flex-col justify-center items-center anime"
+      >
         <h1 class="text-[36px] fomt-[700]">Catch The Insect</h1>
-        <button id="startBtn"
+        <button
+          id="startBtn"
           class="bg-white text-[#516dff] py-[16px] px-[36px] hover:opacity-[0.9] cursor-pointer"
         >
           Play Game
         </button>
       </section>
       <section
-        class="h-[100vh] screen flex flex-col justify-center items-center gap-[40px]"
+        class="h-[100vh] screen flex flex-col justify-center items-center gap-[40px] anime"
       >
         <h1 class="text-[32px]">What is your "favorite" insect?</h1>
         <div class="flex gap-[20px]">
@@ -26,14 +29,14 @@
             class="chooseBtn border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white"
           >
             <span>Fly</span>
-            <img class="w-[80px] h-[100px]" src="./src/image/pashe.png" alt="" />
+            <img class="w-[80px] h-[75px]" src="./src/image/pashe.png" alt="" />
           </div>
           <div
             class="chooseBtn border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white"
           >
             <span>Mosquito</span>
             <img
-              class="w-[80px] h-[100px]"
+              class="w-[80px] h-[75px]"
               src="./src/image/mosquito.png"
               alt=""
             />
@@ -42,23 +45,31 @@
             class="chooseBtn border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white"
           >
             <span>Spider</span>
-            <img class="w-[80px] h-[100px]" src="./src/image/spider.png" alt="" />
+            <img
+              class="w-[80px] h-[75px]"
+              src="./src/image/spider.png"
+              alt=""
+            />
           </div>
           <div
             class="chooseBtn border-2 border-white cursor-pointer w-[150px] h-[150px] flex flex-col items-center justify-center hover:text-[#516dff] hover:bg-white"
           >
             <span>Roach</span>
-            <img
-              class="w-[80px] h-[100px]"
-              src="./src/image/roach.png"
-              alt=""
-            />
+            <img class="w-[80px] h-[75px]" src="./src/image/roach.png" alt="" />
           </div>
         </div>
       </section>
       <section id="container" class="h-[100vh] screen relative">
-        <span class="absolute left-[20px] top-[20px] text-[18px] font-[700]" id="time">t</span>
-        <span class="absolute right-[20px] top-[20px] text-[18px] font-[700]" id="score">s</span>
+        <span
+          class="absolute left-[20px] top-[20px] text-[18px] font-[700]"
+          id="time"
+          >Time: 00:00</span
+        >
+        <span
+          class="absolute right-[20px] top-[20px] text-[18px] font-[700]"
+          id="score"
+          >Score: 0</span
+        >
       </section>
     </main>
     <script type="module" src="/src/main.js"></script>
